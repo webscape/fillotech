@@ -1,0 +1,197 @@
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f7fc; /* Light background color for the body */
+}
+
+header, footer {
+  background-color: #3f51b5; /* Indigo color for the header and footer */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a modern look */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+  border-radius: 4px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+main {
+  flex-grow: 1;
+  padding: 40px 20px;
+  text-align: center; /* Center the content for all sections */
+}
+
+section {
+  margin-bottom: 40px;
+  text-align: center; /* Ensures section titles and paragraphs are centered */
+}
+
+h2 {
+  color: #3f51b5; /* Indigo color for headings */
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 16px;
+  color: #333; /* Dark gray color for text */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 800px; /* Limits width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Services Section */
+#services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  text-align: center; /* Center the text inside the services section */
+}
+
+.service {
+  border: 2px solid #3f51b5; /* Indigo border for each service */
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.service img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.service p {
+  font-size: 14px; /* Adjusted font size for service description */
+  color: #555; /* Slightly lighter color for readability */
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 15px;
+  background-color: #3f51b5; /* Indigo color */
+  color: white;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow to footer */
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  /* Ensuring footer is at the bottom */
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+
+  /* Adjust font size for mobile */
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 28px; /* Smaller font size for mobile */
+  }
+
+  .service h3 {
+    font-size: 16px; /* Smaller font size for services */
+  }
+
+  /* Adjust paragraph styling for mobile */
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+
+
+
+
